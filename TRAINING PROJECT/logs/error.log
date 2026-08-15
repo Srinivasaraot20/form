@@ -1,0 +1,306 @@
+Internal Server Error: /admin/registrations/studentapplication/
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\options.py", line 683, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'institution_display'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\options.py", line 685, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: StudentApplication has no field named 'institution_display'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\templatetags\base.py", line 47, in render
+    return super().render(context)
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\library.py", line 362, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\templatetags\admin_list.py", line 354, in result_list
+    "results": list(results(cl)),
+               ~~~~^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\templatetags\admin_list.py", line 330, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in __init__
+    super().__init__(*items)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\templatetags\admin_list.py", line 219, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+  File "C:\Users\ASUS\Downloads\TRAINING PROJECT\TRAINING PROJECT\registrations\admin.py", line 82, in institution_display
+    return obj.institution.name if obj.institution else "-"
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'name'
+Internal Server Error: /admin/registrations/studentapplication/1/change/
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\options.py", line 841, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\forms\models.py", line 654, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\forms\models.py", line 334, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (highest_qualification, address_line2, address_line1, is_ex_serviceman, date_of_birth) specified for StudentApplication
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\options.py", line 720, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\options.py", line 1988, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\options.py", line 1841, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\options.py", line 1879, in _changeform_view
+    ModelForm = self.get_form(
+        request, obj, change=not add, fields=flatten_fieldsets(fieldsets)
+    )
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\admin\options.py", line 843, in get_form
+    raise FieldError(
+    ...<2 lines>...
+    )
+django.core.exceptions.FieldError: Unknown field(s) (highest_qualification, address_line2, address_line1, is_ex_serviceman, date_of_birth) specified for StudentApplication. Check fields/fieldsets/exclude attributes of class StudentApplicationAdmin.
+Internal Server Error: /dashboard/applications/
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: dashboard/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\ASUS\Downloads\TRAINING PROJECT\TRAINING PROJECT\dashboard\views.py", line 124, in application_list
+    return render(request, 'dashboard/applications.html', context)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\backends\django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\template\backends\django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: dashboard/base.html
+Internal Server Error: /api/auto-save/
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: registrations_studentapplication.application_number
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\ASUS\Downloads\TRAINING PROJECT\TRAINING PROJECT\TRAINING PROJECT\registrations\views.py", line 623, in auto_save_field
+    app = StudentApplication.objects.create(status=status_obj)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 665, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\query.py", line 1873, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python314\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: registrations_studentapplication.application_number
